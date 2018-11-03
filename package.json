@@ -7,7 +7,7 @@
   "scripts": {
     "format": "prettier --write \"src/**/*{js, jsx, css, json, html} \"",
     "format:check": "prettier --list-different \"src/**/*.{js, jsx, css, json, html}\"",
-    "lint": "eslint \"src**/*.{js,jsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx}\"",
     "dev": "parcel src/index.html"
   },
   "husky": {
