@@ -29,13 +29,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": ""
     }
   },
   "lint-staged": {
     "*.{js,jsx,json,scss}": [
       "yarn run pretty",
-      "git add"
+      "git add ."
     ]
   }
 }
