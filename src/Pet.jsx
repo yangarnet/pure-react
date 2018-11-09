@@ -3,8 +3,7 @@ import PropTypes from "prop-types";
 
 const Pet = ({ name, color }) => (
     <Fragment>
-        <h2>
-            your name: {name} - color: {color}
+        <h2>your name: {name} - color: {color}
         </h2>
     </Fragment>
 );

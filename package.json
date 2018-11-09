@@ -5,9 +5,9 @@
   "author": "gyang",
   "license": "MIT",
   "scripts": {
-    "format": "prettier --write \"src/**/*{js, jsx, css, json, html} \"",
-    "format:check": "prettier --list-different \"src/**/*.{js, jsx, css, json, html}\"",
-    "lint": "eslint \"src/**/*.{js,jsx}\"",
+    "format": "prettier --write \"src/*.{js,jsx,css} \"",
+    "format:check": "prettier --list-different \"src/*.{js, jsx, css}\"",
+    "lint": "eslint \"src/*.{js,jsx}\"",
     "dev": "parcel src/index.html"
   },
   "devDependencies": {
@@ -31,7 +31,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "yarn run format"
     }
   },
   "lint-staged": {
